@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.app-frame{
+  margin: 5%;
+  padding: 30px;
+  width: calc(80vw);
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+  background: rgb(225,255,255); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(225,255,255,1) 0%, rgba(225,255,255,1) 7%, rgba(225,255,255,1) 12%, rgba(253,255,255,1) 12%, rgba(230,248,253,1) 30%, rgba(200,238,251,1) 54%, rgba(190,228,248,1) 75%, rgba(177,216,245,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,rgb(52, 148, 230) 0%,rgb(236, 110, 173) 100%); 
+  /* background: linear-gradient(135deg,rgb(127, 0, 255) 0%,rgb(225, 0, 255) 100%);  */
+  /* background: linear-gradient(135deg,rgb(41, 128, 185) 0%,rgb(44, 62, 80) 100%);  */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.customers-actions{
+  background: #AAA;
+  padding: 10px;
+  margin: 10px;
+}
+
+.customers-actions button{
+  background: white;
+  min-width: 100px;
+  height: 30px;
+  margin: 5px;
+}

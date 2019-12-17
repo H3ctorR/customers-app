@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const CustomersActions = ({ children }) => {
     return(
         <div>
-            <div className='cystomers-actions'>
+            <div className='customers-actions'>
                 <div>
                     {children}
                 </div>
