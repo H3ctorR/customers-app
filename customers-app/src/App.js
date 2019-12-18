@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import HomeContainer from './containers/HomeContainers';
+import CustomersContainer from './containers/CustomersContainer';
 
 
 
 class App extends React.Component {
   renderHome = () => <HomeContainer />;
   renderCustomerContainer = () => <h1>Customer Container</h1>;
-  renderCustomerListContainer = () => <h1>Customers List Container</h1>;
+  renderCustomerListContainer = () => <CustomersContainer /> ;
   renderCustomerNewContainer = () => <h1>Customer New Container</h1>;
 
   render(){

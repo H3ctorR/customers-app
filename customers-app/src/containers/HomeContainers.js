@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 
 import AppFrame from '../components/AppFrame';
@@ -30,10 +29,6 @@ class HomeContainer extends React.Component{
             </div>
         )
     }
-}
-
-HomeContainer.propTypes = {
-
 }
 
 // Solucion para el error de la version 2 de enrutar
