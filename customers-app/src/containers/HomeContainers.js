@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import AppFrame from '../components/AppFrame';
 import CustomerActions from '../components/CustomersActions';
+import { withRouter } from 'react-router-dom';
 
 class HomeContainer extends React.Component{
     handleOnClick = () =>{
         console.log('handleOn Click');
+        //Esto hace lo mismo que Link
+        //Con esto redireccionamos a una pagina
+        this.props.history.push('/customers');
     }
     render(){
         return(
@@ -32,4 +36,5 @@ HomeContainer.propTypes = {
 
 }
 
-export default HomeContainer;
+// Solucion para el error de la version 2 de enrutar
+export default withRouter(HomeContainer);

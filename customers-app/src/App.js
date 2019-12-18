@@ -7,6 +7,7 @@ import HomeContainer from './containers/HomeContainers';
 
 
 class App extends React.Component {
+  renderHome = () => <HomeContainer />;
   renderCustomerContainer = () => <h1>Customer Container</h1>;
   renderCustomerListContainer = () => <h1>Customers List Container</h1>;
   renderCustomerNewContainer = () => <h1>Customer New Container</h1>;
@@ -15,7 +16,10 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Route exact path='/' component={HomeContainer} />
+          {/* <Route exact path='/' component={HomeContainer} /> */}
+          {/* Version 2 de enrutar pero tira un error mirar app.js en la parte de export */}
+          <Route exact path='/' component={this.renderHome} />
+
           <Route exact path='/customers' component={this.renderCustomerListContainer} />
           <Switch>
             <Route exact path='/customers/new' component={this.renderCustomerNewContainer} />
