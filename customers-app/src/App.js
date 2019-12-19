@@ -26,7 +26,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/customers/new' component={this.renderCustomerNewContainer} />
             <Route exact path='/customers/:dni' 
-                    render={props => <CustomerContainer dni={props.match.params.dni} />} />
+                    render={props => <CustomerContainer  dni={props.match.params.dni} />} />
           </Switch>
         </div>
       </Router>
