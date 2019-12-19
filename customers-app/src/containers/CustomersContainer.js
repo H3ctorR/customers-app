@@ -20,7 +20,7 @@ class CustomersContainer extends Component {
         <div>
             <CustomersList
                 customers={customers}
-                urlPath={'customer/'}>
+                urlPath={'customers/'}>
             </CustomersList>
 
             <CustomersActions>
